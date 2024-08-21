@@ -1,0 +1,45 @@
+.content{
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+}
+.login{
+    width: 30vw;
+    min-width: 400px;
+}
+/* 基础样式，适用于所有设备 */  
+.login-box {  
+    width: 300px; /* 设定一个基本宽度 */  
+    margin: 50px auto; /* 居中显示，并有一定的外边距 */  
+    padding: 20px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */  
+    border-radius: 8px; /* 圆角边框 */  
+    background-color: #fff; /* 背景色 */  
+  }  
+    
+  /* 针对手机设备（屏幕宽度小于600px） */  
+  @media (max-width: 599px) {  
+    .login-box {  
+      width: 90%; /* 宽度调整为屏幕宽度的90% */  
+      padding: 15px; /* 减小内边距 */  
+    }  
+    
+    .login-box input[type="text"],  
+    .login-box input[type="password"] {  
+      width: calc(100% - 30px); /* 输入框宽度调整，留出一些空间给边框和内边距 */  
+    }  
+  }  
+    
+  /* 针对平板设备（屏幕宽度在600px到900px之间） */  
+  @media (min-width: 600px) and (max-width: 899px) {  
+    .login-box {  
+      width: 80%; /* 宽度调整为屏幕宽度的80% */  
+      padding: 20px; /* 保持和默认样式一致的内边距 */  
+    }  
+    
+    .login-box input[type="text"],  
+    .login-box input[type="password"] {  
+      width: calc(100% - 32px); /* 输入框宽度调整，留出一些空间给边框和内边距 */  
+    }  
+  }  
+    
